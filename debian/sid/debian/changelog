@@ -1,5 +1,6 @@
-ignition-plugin (1.1.0-1~sid) sid; urgency=medium
+ignition-plugin2 (1.999.999-1~sid) sid; urgency=medium
 
-  * ignition-plugin 1.1.0-1 release
+  * Stub to be removed after first entry
 
- -- Steve Peters <scpeters@openrobotics.org>  Thu, 21 Nov 2019 18:08:34 -0800
+ -- Louise Poubel <louise@openrobotics.org>  Thu, 29 Oct 2020 11:51:39 -0700
+
