@@ -6,9 +6,9 @@ Priority: extra
 Build-Depends: cmake,
                debhelper (>= 7.0.50~),
                doxygen,
-               libignition-cmake2-dev,
-               libignition-utils1-cli-dev,
-               libignition-utils1-dev,
+               libignition-cmake3-dev,
+               libignition-utils2-cli-dev,
+               libignition-utils2-dev,
                python3,
                ruby-ronn
 Vcs-Browser: https://github.com/ignition-release/ign-plugin2-release
@@ -27,9 +27,9 @@ Package: libignition-plugin2-dev
 Architecture: any
 Section: libdevel
 Depends: libignition-plugin2 (= ${binary:Version}),
-         libignition-cmake2-dev,
-         libignition-utils1-cli-dev,
-         libignition-utils1-dev,
+         libignition-cmake3-dev,
+         libignition-utils2-cli-dev,
+         libignition-utils2-dev,
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Plugin Library - Development files
