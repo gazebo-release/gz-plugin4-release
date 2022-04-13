@@ -1,0 +1,9 @@
+Document: ignition-plugin2
+Title: Ignition Plugin C++ API reference
+Author: Open Robotics
+Abstract: Describe the Ignition Plugin C++ API.
+Section: Programming/C++
+
+Format: HTML
+Index: /usr/share/doc/libignition-plugin[0-99]-dev/html/index.html
+Files: /usr/share/doc/libignition-plugin[0-99]-dev/html/*

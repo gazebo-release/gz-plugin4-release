@@ -7,7 +7,7 @@ DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
         override_dh_auto_test
 
 %:
-	dh $@ --parallel
+	dh $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
@@ -16,9 +16,6 @@ override_dh_auto_configure:
 override_dh_strip:
 	dh_strip -a --dbg-package=libignition-plugin2-dbg
 
-override_dh_auto_test:
-ifeq ($(DEB_HOST_ARCH),armhf)
-	true
-else
-	dh_auto_test $@ --no-parallel --buildsystem=cmake
-endif
+override_dh_auto_install:
+	dh_auto_install
+	mv obj-$(DEB_BUILD_GNU_TYPE)/doxygen/html debian/tmp/html

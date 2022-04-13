@@ -1,19 +1,19 @@
 Source: ignition-plugin2
-Standards-Version: 3.9.4
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: extra
 Build-Depends: cmake,
-               debhelper (>= 7.0.50~),
+               debhelper (>= 11),
                doxygen,
                libignition-cmake3-dev,
                libignition-utils2-cli-dev,
                libignition-utils2-dev,
-               python,
+               python3,
                ruby-ronn
 Vcs-Browser: https://github.com/ignition-release/ign-plugin2-release
-Vcs-Git: https://github.com/ignition-release/ign-plugin2-release
-Homepage: https://github.com/ignition-release/ign-plugin2
+Vcs-Git: https://github.com/ignitionrobotics/ign-plugin.git
+Standards-Version: 4.5.1
+Homepage: https://github.com/ignitionrobotics/ign-plugin
 
 Package: libignition-plugin2
 Architecture: any
@@ -22,6 +22,10 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Plugin Library - Shared library
+ Ignition Plugin is a component in the ignition framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Package contains the shared library
 
 Package: libignition-plugin2-dev
 Architecture: any
@@ -33,6 +37,10 @@ Depends: libignition-plugin2 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Plugin Library - Development files
+ Ignition Plugin is a component in the ignition framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Package contains the development files
 
 Package: libignition-plugin2-dbg
 Architecture: any
@@ -43,3 +51,7 @@ Depends:
      ${misc:Depends}
 Multi-Arch: same
 Description: Ignition Robotics Plugin Library - Debugging symbols
+ Ignition Plugin is a component in the ignition framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Package contains debugging symbols
