@@ -36,11 +36,24 @@ Depends: libignition-plugin2 (= ${binary:Version}),
          libignition-utils2-dev,
          ${misc:Depends}
 Multi-Arch: same
+Recommends: ignition-plugin2-cli
 Description: Ignition Robotics Plugin Library - Development files
  Ignition Plugin is a component in the ignition framework, a set of libraries
  designed to rapidly develop robot applications.
  .
  Package contains the development files
+
+Package: ignition-plugin2-cli
+Architecture: any
+Depends: libignition-plugin2 (= ${binary:Version}),
+         ${shlibs:Depends},
+         ${misc:Depends}
+Multi-Arch: no
+Description: Collection of useful code used by robotics apps - CLI tool
+ Ignition Plugin is a component in the ignition framework, a set of libraries
+ designed to rapidly develop robot applications.
+ .
+ Ignition plugin client tool
 
 Package: libignition-plugin2-dbg
 Architecture: any
