@@ -14,21 +14,21 @@ cmake_minimum_required(VERSION 3.5.1 FATAL_ERROR)
 
 project(example)
 
-# Find the ignition-plugin2 library
-find_package(ignition-plugin2 REQUIRED COMPONENTS all)
-#include_directories(\${ignition-plugin2_INCLUDE_DIRS})
+# Find the gz-plugin2 library
+find_package(gz-plugin2 REQUIRED COMPONENTS all)
+#include_directories(\${gz-plugin2_INCLUDE_DIRS})
 add_executable(plugin_test plugin_test.cc)
 target_link_libraries(plugin_test
   PRIVATE
-    ignition-plugin2::register
-    ignition-plugin2::loader
+    gz-plugin2::register
+    gz-plugin2::loader
 )
 
 EOF
 
 cat <<EOF2 > plugin_test.cc
-#include <ignition/plugin/Loader.hh>
-#include <ignition/plugin/Register.hh>
+#include <gz/plugin/Loader.hh>
+#include <gz/plugin/Register.hh>
 
 class Drive
 {
@@ -44,7 +44,7 @@ IGNITION_ADD_PLUGIN(CautiousBot,
     CautiousBot::Drive)
 
 int main(int argc, char** argv) {
-  ignition::plugin::Loader pl;
+  gz::plugin::Loader pl;
 
   return 0;
 }
@@ -57,4 +57,3 @@ echo "build: OK"
 
 ./plugin_test
 echo "plugin_test run: OK"
-
