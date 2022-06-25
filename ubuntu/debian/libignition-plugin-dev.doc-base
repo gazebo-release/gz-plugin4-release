@@ -1,7 +1,7 @@
 Document: ignition-plugin2
-Title: Ignition Plugin C++ API reference
+Title: Gazebo Plugin C++ API reference
 Author: Open Robotics
-Abstract: Describe the Ignition Plugin C++ API.
+Abstract: Describe the Gazebo Plugin C++ API.
 Section: Programming/C++
 
 Format: HTML

@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: ignition-plugin2
-Upstream-Contact: https://github.com/ignitionrobotics/ign-plugin/issues
-Source: https://github.com/ignitionrobotics/ign-plugin
+Upstream-Name: gz-plugin
+Upstream-Contact: https://github.com/gazebosim/gz-plugin/issues
+Source: https://github.com/gazebosim/gz-plugin
 Files-Excluded: appveyor.yml test/gtest .github bitbucket-pipelines.yml codecov.yml configure.bat
 
 Files: *

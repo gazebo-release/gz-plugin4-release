@@ -10,10 +10,10 @@ Build-Depends: cmake,
                libignition-utils2-dev,
                python3,
                ruby-ronn
-Vcs-Browser: https://github.com/ignition-release/ign-plugin2-release
-Vcs-Git: https://github.com/ignitionrobotics/ign-plugin.git
+Vcs-Browser: https://github.com/gazebo-release/gz-plugin2-release
+Vcs-Git: https://github.com/gazebosim/gz-plugin.git
 Standards-Version: 4.5.1
-Homepage: https://github.com/ignitionrobotics/ign-plugin
+Homepage: https://github.com/gazebosim/gz-plugin
 
 Package: libignition-plugin2
 Architecture: any
@@ -21,8 +21,8 @@ Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Plugin Library - Shared library
- Ignition Plugin is a component in the ignition framework, a set of libraries
+Description: Gazebo Plugin Library - Shared library
+ Gazebo Plugin is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
  .
  Package contains the shared library
@@ -37,8 +37,8 @@ Depends: libignition-plugin2 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: same
 Recommends: ignition-plugin2-cli
-Description: Ignition Robotics Plugin Library - Development files
- Ignition Plugin is a component in the ignition framework, a set of libraries
+Description: Gazebo Plugin Library - Development files
+ Gazebo Plugin is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
  .
  Package contains the development files
@@ -50,10 +50,10 @@ Depends: libignition-plugin2 (= ${binary:Version}),
          ${misc:Depends}
 Multi-Arch: no
 Description: Collection of useful code used by robotics apps - CLI tool
- Ignition Plugin is a component in the ignition framework, a set of libraries
+ Gazebo Plugin is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
  .
- Ignition plugin client tool
+ Gazebo plugin client tool
 
 Package: libignition-plugin2-dbg
 Architecture: any
@@ -63,8 +63,8 @@ Depends:
      libignition-plugin2 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
-Description: Ignition Robotics Plugin Library - Debugging symbols
- Ignition Plugin is a component in the ignition framework, a set of libraries
+Description: Gazebo Plugin Library - Debugging symbols
+ Gazebo Plugin is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
  .
  Package contains debugging symbols
