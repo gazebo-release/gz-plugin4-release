@@ -1,13 +1,13 @@
-Source: ignition-plugin2
+Source: gz-plugin2
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: extra
 Build-Depends: cmake,
                debhelper (>= 11),
                doxygen,
-               libignition-cmake3-dev,
-               libignition-utils2-cli-dev,
-               libignition-utils2-dev,
+               libgz-cmake3-dev,
+               libgz-utils2-cli-dev,
+               libgz-utils2-dev,
                python3,
                ruby-ronn
 Vcs-Browser: https://github.com/gazebo-release/gz-plugin2-release
@@ -15,11 +15,13 @@ Vcs-Git: https://github.com/gazebosim/gz-plugin.git
 Standards-Version: 4.5.1
 Homepage: https://github.com/gazebosim/gz-plugin
 
-Package: libignition-plugin2
+Package: libgz-plugin2
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libignition-plugin2 (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
+Replaces: libignition-plugin2 (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Multi-Arch: same
 Description: Gazebo Plugin Library - Shared library
  Gazebo Plugin is a component in the Gazebo framework, a set of libraries
@@ -27,27 +29,31 @@ Description: Gazebo Plugin Library - Shared library
  .
  Package contains the shared library
 
-Package: libignition-plugin2-dev
+Package: libgz-plugin2-dev
 Architecture: any
 Section: libdevel
-Depends: libignition-plugin2 (= ${binary:Version}),
-         libignition-cmake3-dev,
-         libignition-utils2-cli-dev,
-         libignition-utils2-dev,
+Depends: libgz-plugin2 (= ${binary:Version}),
+         libgz-cmake3-dev,
+         libgz-utils2-cli-dev,
+         libgz-utils2-dev,
          ${misc:Depends}
+Breaks: libignition-plugin2-dev (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
+Replaces: libignition-plugin2-dev (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Multi-Arch: same
-Recommends: ignition-plugin2-cli
+Recommends: gz-plugin2-cli
 Description: Gazebo Plugin Library - Development files
  Gazebo Plugin is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
  .
  Package contains the development files
 
-Package: ignition-plugin2-cli
+Package: gz-plugin2-cli
 Architecture: any
-Depends: libignition-plugin2 (= ${binary:Version}),
+Depends: libgz-plugin2 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
+Breaks: ignition-plugin2-cli (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
+Replaces: ignition-plugin2-cli (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Multi-Arch: no
 Description: Collection of useful code used by robotics apps - CLI tool
  Gazebo Plugin is a component in the Gazebo framework, a set of libraries
@@ -55,16 +61,50 @@ Description: Collection of useful code used by robotics apps - CLI tool
  .
  Gazebo plugin client tool
 
-Package: libignition-plugin2-dbg
+Package: libgz-plugin2-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libignition-plugin2 (= ${binary:Version}),
+     libgz-plugin2 (= ${binary:Version}),
      ${misc:Depends}
+Breaks: libignition-plugin2-dbg (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
+Replaces: libignition-plugin2-dbg (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Multi-Arch: same
 Description: Gazebo Plugin Library - Debugging symbols
  Gazebo Plugin is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
  .
  Package contains debugging symbols
+
+Package: libignition-plugin2
+Depends: libgz-plugin2, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-plugin2-dev
+Depends: libgz-plugin2-dev, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: ignition-plugin2-cli
+Depends: gz-plugin2-cli, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libignition-plugin2-dbg
+Depends: libgz-plugin2-dbg, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package. It can safely be removed.
