@@ -14,14 +14,14 @@ cmake_minimum_required(VERSION 3.5.1 FATAL_ERROR)
 
 project(example)
 
-# Find the ignition-plugin2 library
-find_package(ignition-plugin2 REQUIRED COMPONENTS all)
-#include_directories(\${ignition-plugin2_INCLUDE_DIRS})
+# Find the gz-plugin2 library
+find_package(gz-plugin2 REQUIRED COMPONENTS all)
+#include_directories(\${gz-plugin2_INCLUDE_DIRS})
 add_executable(plugin_test plugin_test.cc)
 target_link_libraries(plugin_test
   PRIVATE
-    ignition-plugin2::register
-    ignition-plugin2::loader
+    gz-plugin2::register
+    gz-plugin2::loader
 )
 
 EOF
