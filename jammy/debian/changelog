@@ -1,3 +1,9 @@
+gz-plugin2 (2.0.0~pre1-1~jammy) jammy; urgency=medium
+
+  * gz-plugin2 2.0.0~pre1-1 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Wed, 31 Aug 2022 10:08:37 -0700
+
 gz-plugin2 (1.999.999-1~jammy) jammy; urgency=medium
 
   * Stub to be removed after first entry
