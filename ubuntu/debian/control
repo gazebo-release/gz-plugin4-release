@@ -20,6 +20,7 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: gz-plugin2-cli
 Breaks: libignition-plugin2 (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Replaces: libignition-plugin2 (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Multi-Arch: same
@@ -40,7 +41,6 @@ Depends: libgz-plugin2 (= ${binary:Version}),
 Breaks: libignition-plugin2-dev (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Replaces: libignition-plugin2-dev (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
 Multi-Arch: same
-Recommends: gz-plugin2-cli
 Description: Gazebo Plugin Library - Development files
  Gazebo Plugin is a component in the Gazebo framework, a set of libraries
  designed to rapidly develop robot applications.
