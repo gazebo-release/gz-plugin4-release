@@ -52,8 +52,10 @@ Architecture: any
 Depends: libgz-plugin2 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
-Breaks: ignition-plugin2-cli (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
-Replaces: ignition-plugin2-cli (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1)
+Breaks: ignition-plugin2-cli (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1),
+        libgz-plugin2-dev (<< 2.0.1+)
+Replaces: ignition-plugin2-cli (<< 1.999.999+nightly+git20220630+1r3262c92257b72c3c82d788ae5aa1d54c464261e4-1),
+          libgz-plugin2-dev (<< 2.0.1+)
 Multi-Arch: no
 Description: Collection of useful code used by robotics apps - CLI tool
  Gazebo Plugin is a component in the Gazebo framework, a set of libraries
