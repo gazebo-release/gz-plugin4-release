@@ -1,3 +1,9 @@
+gz-plugin2 (2.0.2-2~jammy) jammy; urgency=medium
+
+  * gz-plugin2 2.0.2-2 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Tue, 26 Sep 2023 20:17:34 -0500
+
 gz-plugin2 (2.0.2-1~jammy) jammy; urgency=medium
 
   * gz-plugin2 2.0.2-1 release
