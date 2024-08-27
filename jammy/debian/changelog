@@ -1,3 +1,9 @@
+gz-plugin3 (3.0.0~pre1-1~jammy) jammy; urgency=medium
+
+  * gz-plugin3 3.0.0~pre1-1 release
+
+ -- Ian Chen <ichen@openrobotics.org>  Tue, 27 Aug 2024 18:44:25 +0000
+
 gz-plugin3 (2.999.999-1~jammy) jammy; urgency=medium
 
   * Stub to be removed after first entry
