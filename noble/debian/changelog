@@ -1,11 +1,11 @@
+gz-plugin3 (3.0.0-1~noble) noble; urgency=medium
+
+  * gz-plugin3 3.0.0-1 release
+
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Thu, 26 Sep 2024 11:04:16 -0500
+
 gz-plugin3 (3.0.0~pre1-1~noble) noble; urgency=medium
 
   * gz-plugin3 3.0.0~pre1-1 release
 
  -- Ian Chen <ichen@openrobotics.org>  Tue, 27 Aug 2024 18:44:25 +0000
-
-gz-plugin3 (2.999.999-1~noble) noble; urgency=medium
-
-  * First release for noble
-
- -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 09 Feb 2024 19:28:40 +0100
