@@ -1,4 +1,4 @@
-Source: gz-plugin3
+Source: gz-plugin4
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: extra
@@ -10,17 +10,17 @@ Build-Depends: cmake,
                libgz-utils3-dev,
                python3,
                ruby-ronn
-Vcs-Browser: https://github.com/gazebo-release/gz-plugin3-release
+Vcs-Browser: https://github.com/gazebo-release/gz-plugin4-release
 Vcs-Git: https://github.com/gazebosim/gz-plugin.git
 Standards-Version: 4.5.1
 Homepage: https://github.com/gazebosim/gz-plugin
 
-Package: libgz-plugin3
+Package: libgz-plugin4
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: gz-plugin3-cli
+Recommends: gz-plugin4-cli
 Multi-Arch: same
 Description: Gazebo Plugin Library - Shared library
  Gazebo Plugin is a component in the Gazebo framework, a set of libraries
@@ -28,10 +28,10 @@ Description: Gazebo Plugin Library - Shared library
  .
  Package contains the shared library
 
-Package: libgz-plugin3-dev
+Package: libgz-plugin4-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-plugin3 (= ${binary:Version}),
+Depends: libgz-plugin4 (= ${binary:Version}),
          libgz-cmake4-dev,
          libgz-utils3-cli-dev,
          libgz-utils3-dev,
@@ -43,9 +43,9 @@ Description: Gazebo Plugin Library - Development files
  .
  Package contains the development files
 
-Package: gz-plugin3-cli
+Package: gz-plugin4-cli
 Architecture: any
-Depends: libgz-plugin3 (= ${binary:Version}),
+Depends: libgz-plugin4 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
 Multi-Arch: no
@@ -55,12 +55,12 @@ Description: Collection of useful code used by robotics apps - CLI tool
  .
  Gazebo plugin client tool
 
-Package: libgz-plugin3-dbg
+Package: libgz-plugin4-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libgz-plugin3 (= ${binary:Version}),
+     libgz-plugin4 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Gazebo Plugin Library - Debugging symbols
