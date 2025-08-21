@@ -68,3 +68,19 @@ Description: Gazebo Plugin Library - Debugging symbols
  designed to rapidly develop robot applications.
  .
  Package contains debugging symbols
+
+Package: gz-jetty-plugin
+Depends: libgz-plugin4-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
+Package: gz-jetty-plugin-cli
+Depends: gz-plugin4-cli (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
