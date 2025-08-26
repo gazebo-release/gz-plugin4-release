@@ -1,3 +1,9 @@
+gz-plugin4 (4.0.0~pre1-1~noble) noble; urgency=medium
+
+  * gz-plugin4 4.0.0~pre1-1 release
+
+ -- Alejandro Hernandez Cordero <ahcorde@gmail.com>  Tue, 26 Aug 2025 20:09:30 +0200
+
 gz-plugin4 (3.999.999-1~noble) noble; urgency=medium
 
   * Stub to be removed after first entry
