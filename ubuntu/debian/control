@@ -84,3 +84,12 @@ Priority: optional
 Section: metapackages
 Description: alias package
  Provides a package for Jetty without exposing the version number.
+
+Package: libgz-jetty-plugin-dev
+Depends: libgz-plugin4-dev (= ${binary:Version}), ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: metapackages
+Description: alias package
+ Provides a package for Jetty without exposing the version number.
+
